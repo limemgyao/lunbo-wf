@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/ft-carousel.css" />
+    <title>Document</title>
+    <style>
+        .example {width: 600px;height: 957px;margin: 20px auto;}
+        .carousel-item{line-height: 336px;color: #fff;}
+    </style>
+</head>
+<body>
+<div class="example">
+    <div class="ft-carousel" id="carousel_1">
+        <ul class="carousel-inner">
+            <li class="carousel-item"><img src="img/ct1.jpg" /></li>
+            <li class="carousel-item"><img src="img/ct2.jpg" /></li>
+            <li class="carousel-item"><img src="img/ct3.jpg" /></li>
+            <li class="carousel-item"><img src="img/ct4.jpg" /></li>
+            <li class="carousel-item"><img src="img/ct5.jpg" /></li>
+            <li class="carousel-item"><img src="img/ct6.jpg" /></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/ft-carousel.min.js"></script>
+<script type="text/javascript">
+    $("#carousel_1").FtCarousel();
+
+    $("#carousel_2").FtCarousel({
+        index: 1,
+        auto: false
+    });
+
+    $("#carousel_3").FtCarousel({
+        index: 0,
+        auto: true,
+        time: 3000,
+        indicators: false,
+        buttons: true
+    });
+</script>
+</html>
